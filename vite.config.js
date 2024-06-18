@@ -9,7 +9,7 @@ export default defineConfig({
   base: "https://mdn.github.io/todo-vue/",
   resolve: {
     alias: {
-      "@": "/src",
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
 });
